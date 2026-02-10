@@ -3,6 +3,8 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+  demands:
+    - Agent.Version -gtVersion 2.163.1
 
 steps:
 - script: echo Hello, world!
